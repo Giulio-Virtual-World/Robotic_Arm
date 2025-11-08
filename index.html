@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://giulio-virtual-world.com/Logo.png">
+    <title>Braccio Robotico | Giulio Virtual World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-notice" id="mobileNotice">
+        <i class="fas fa-mobile-alt"></i>
+        La pagina potrebbe non caricarsi correttamente da dispositivi mobili.
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <span>Braccio Robotico</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="#controllo"><i class="fas fa-gamepad"></i> Sistemi di Controllo</a>
+                <a href="#componenti"><i class="fas fa-microchip"></i> Componenti</a>
+                <a href="#stampa3d"><i class="fas fa-cube"></i> Stampa 3D</a>
+                <a href="#codice"><i class="fas fa-code"></i> Codice</a>
+                <a href="./control" target="_blank"><i class="fas fa-terminal"></i> Controllo web</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Braccio Robotico Stampato in 3D e Controllato Multi-Piattaforma</h1>
+            <p>Un sistema che combina modellazione e stampa 3D, Arduino, Node.js e interfacce web e Discord per il controllo remoto di un braccio robotico completamente realizzato con la stampa 3D.</p>
+            <div class="cta-buttons">
+                <!--
+                <a href="./control" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-play-circle"></i> Controlla il braccio
+                </a>
+                -->
+                <a href="#controllo" class="btn btn-outline">
+                    <i class="fas fa-info-circle"></i> Scopri di Più
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sistemi di Controllo -->
+        <section id="controllo" class="section">
+            <div class="section-header">
+                <i class="fas fa-network-wired"></i>
+                <h2>Sistemi di Controllo Integrati</h2>
+            </div>
+            
+            <p>Il braccio robotico può essere controllato attraverso tre metodi diversi, che operano in modo indipendente o combinato:</p>
+            
+            <div class="control-systems">
+                <div class="control-card">
+                    <h3><i class="fas fa-gamepad"></i> Controllo Joystick</h3>
+                    <p>Controllo diretto tramite joystick analogico collegato ad Arduino. Il joystick gestisce:</p>
+                    <ul>
+                        <li><strong>Asse X:</strong> Movimento simultaneo di spalla e gomito</li>
+                        <li><strong>Asse Y:</strong> Rotazione della base</li>
+                        <li><strong>Pulsante:</strong> Apertura/chiusura pinza</li>
+                    </ul>
+                </div>
+                
+                <div class="control-card">
+                    <h3><i class="fab fa-discord"></i> Controllo Discord</h3>
+                    <p>Controllo remoto tramite bot Discord che interpreta comandi testuali:</p>
+                    <ul>
+                        <li><strong>Formato messaggi:</strong><br>[motore][gradi]<br>1360 ➔ Ruota la base di 360°<br>3-45 ➔ Muovi il gomito di -45°</li>
+                        <li><strong>Bot (Node.js):</strong> Riceve comandi dal canale Discord e li invia ad Arduino via seriale</li>
+                        <li><strong>Feedback:</strong> Risposte in tempo reale sul canale</li>
+                    </ul>
+                </div>
+                
+                <div class="control-card">
+                    <h3><i class="fas fa-globe"></i> Controllo Web</h3>
+                    <p>Interfaccia grafica web che invia comandi tramite webhook Discord:</p>
+                    <ul>
+                        <li><strong>Interfaccia:</strong> Controlli visivi per ogni motore</li>
+                        <li><strong>Webhook:</strong> Invia messaggi al canale Discord</li>
+                        <li><strong>Sequenze:</strong> Programmazione di movimenti complessi</li>
+                        <li><strong>Salvataggio:</strong> Esportazione/importazione sequenze</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Diagramma di Connessione -->
+            <div class="connection-diagram">
+                <h3>Diagramma di Connessione del Sistema</h3>
+                <div class="diagram-container">
+                    <svg width="100%" height="100%" viewBox="0 100 1000 400">
+                        <defs>
+                            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="var(--header-secondary)"/>
+                            </marker>
+                        </defs>
+                        
+                        <!-- Nodi -->
+                        <rect x="50" y="200" width="150" height="80" rx="10" class="connection-node"/>
+                        <text x="125" y="240" class="connection-node-label"><a href="./control" target="_blank">Interfaccia Web</a></text>
+                        <text x="125" y="260" class="connection-node-label">(Browser)</text>
+                        
+                        <rect x="300" y="200" width="150" height="80" rx="10" class="connection-node"/>
+                        <text x="375" y="240" class="connection-node-label"><a href="https://discord.gg/5g3JzfbMjv" target="_blank">Server Discord</a></text>
+                        <text x="375" y="260" class="connection-node-label">(Canale Bot)</text>
+                        
+                        <rect x="550" y="200" width="150" height="80" rx="10" class="connection-node"/>
+                        <text x="625" y="240" class="connection-node-label">Bot Node.js</text>
+                        <text x="625" y="260" class="connection-node-label">(PC/Local)</text>
+                        
+                        <rect x="800" y="200" width="150" height="80" rx="10" class="connection-node"/>
+                        <text x="875" y="240" class="connection-node-label">Arduino</text>
+                        <text x="875" y="260" class="connection-node-label">(Braccio Robotico)</text>
+                        
+                        <!-- Joystick -->
+                        <rect x="800" y="350" width="150" height="80" rx="10" class="connection-node"/>
+                        <text x="875" y="390" class="connection-node-label">Joystick</text>
+                        <text x="875" y="410" class="connection-node-label">(Controllo Diretto)</text>
+                        
+                        <!-- Connessioni -->
+                        <path d="M 120 350 L 120 280" class="connection-path"></path>
+                        <text x="120" y="370" class="connection-label">Input (UI)</text>
+
+                        <path d="M 200 240 L 300 240" class="connection-path"/>
+                        <text x="250" y="225" class="connection-label">Webhook HTTP</text>
+
+                        <path d="M 375 350 L 375 280" class="connection-path"></path>
+                        <text x="375" y="370" class="connection-label">Input (Messaggi)</text>
+                        
+                        <path d="M 450 240 L 550 240" class="connection-path"/>
+                        <text x="500" y="225" class="connection-label">Eventi Messaggi</text>
+                        
+                        <path d="M 700 240 L 800 240" class="connection-path"/>
+                        <text x="750" y="225" class="connection-label">Seriale USB</text>
+                        
+                        <path d="M 875 350 L 875 280" class="connection-path"/>
+                        <text x="925" y="325" class="connection-label">Input Diretto</text>
+                        
+                        <!-- Icone -->
+                        <circle cx="125" cy="150" r="30" fill="#3498db"/>
+                        <text x="125" y="155" text-anchor="middle" fill="white" font-size="24"><a href="./control" target="_blank" style="text-decoration: none;">🌐</a></text>
+                        
+                        <circle cx="375" cy="150" r="30" fill="#9b59b6"/>
+                        <text x="375" y="155" text-anchor="middle" fill="white" font-size="24"><a href="https://discord.gg/5g3JzfbMjv" target="_blank" style="text-decoration: none;">💬</a></text>
+                        
+                        <circle cx="625" cy="150" r="30" fill="#e74c3c"/>
+                        <text x="625" y="155" text-anchor="middle" fill="white" style="cursor: default;" font-size="15">Node.js</text>
+                        
+                        <circle cx="875" cy="150" r="30" fill="#2ecc71"/>
+                        <text x="875" y="155" text-anchor="middle" fill="white" style="cursor: default;" font-size="24">🔌</text>
+                        
+                        <circle cx="875" cy="470" r="30" fill="#f39c12"/>
+                        <text x="875" y="475" text-anchor="middle" fill="white" style="cursor: default;" font-size="24">🎮</text>
+                    </svg>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 2rem; color: var(--header-secondary);">Flusso dei Dati</h3>
+            <p>Il sistema opera su due canali principali:</p>
+            <ol>
+                <li>
+                    <h3>Canale Web/Discord (Controllo Remoto)</h3>
+                    <p><strong>Interfaccia Web → Webhook Discord → Bot Node.js → Seriale USB → Arduino</strong></p>
+                    <p>L'utente interagisce con l'interfaccia web che invia comandi tramite webhook al canale Discord. Il bot Node.js monitora il canale, interpreta i comandi e li invia ad Arduino tramite connessione seriale USB.</p>
+                </li>
+                <li>
+                    <h3>Canale Joystick (Controllo Locale)</h3>
+                    <p><strong>Joystick → Input Diretto Arduino</strong></p>
+                    <p>Il joystick è collegato direttamente ai pin analogici di Arduino e fornisce un controllo immediato senza passare attraverso il software intermedio.</p>
+                </li>
+            </ol>
+        </section>
+        
+        <!-- Componenti -->
+        <section id="componenti" class="section">
+            <div class="section-header">
+                <i class="fas fa-microchip"></i>
+                <h2>Componenti Hardware e Collegamenti</h2>
+            </div>
+            
+            <div class="component-details">
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h4>Arduino Mega 2560</h4>
+                    <p>Microcontrollore con sufficienti pin I/O per gestire tutti i motori e sensori.</p>
+                </div>
+                
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-motor"></i>
+                    </div>
+                    <h4>Motori Stepper (5x)</h4>
+                    <p>Per movimenti precisi di base, spalla e gomito. Controllati tramite driver dedicati.</p>
+                </div>
+                
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-motor"></i>
+                    </div>
+                    <h4>Servomotori (2x)</h4>
+                    <p>Per il controllo del polso e della pinza con movimenti angolari precisi.</p>
+                </div>
+                
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h4>Joystick Analogico</h4>
+                    <p>Controllo manuale con due assi analogici e pulsante integrato.</p>
+                </div>
+                
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-arrows-alt-v"></i>
+                    </div>
+                    <h4>Sensori Finecorsa (3x)</h4>
+                    <p>Per la calibrazione automatica all'avvio del sistema.</p>
+                </div>
+                
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4>PC con Node.js</h4>
+                    <p>Esegue il bot Discord e gestisce la comunicazione seriale con Arduino.</p>
+                </div>
+            </div>
+            
+            <h3 style="margin: 2rem 0; text-align: center; color: var(--header-secondary);">Collegamenti Cablati</h3>
+            <div class="circuit-img gallery-placeholder">
+                <img src="./img/circuito.jpg" onerror="this.outerHTML = '<i class=\'fas fa-image\'></i><br><span style=\'color: #da737e;\'>Immagine non disponibile</span>';" alt="Immagine non disponibile" />
+            </div>
+        </section>
+
+        <!-- Progettazione e Stampa 3D -->
+        <section id="stampa3d" class="section">
+            <div class="section-header">
+                <i class="fas fa-cube"></i>
+                <h2>Progettazione 3D e Stampa</h2>
+            </div>
+            
+            <div class="design-content">
+                <div class="design-text">
+                    <h3>Design Completamente Realizzato in Fusion 360</h3>
+                    <p>Il braccio robotico è stato progettato da zero utilizzando <strong>Autodesk Fusion 360</strong>, 
+                    con un'attenzione particolare alla:</p>
+                    <ul>
+                        <li><strong>Modellazione parametrica</strong> per facilitare modifiche e ottimizzazioni</li>
+                        <li><strong>Analisi strutturale</strong> per garantire leggerezza, resistenza e stabilità</li>
+                        <li><strong>Ottimizzazione per la stampa 3D</strong> riducendo al minimo i supporti ed evitando modelli complessi</li>
+                        <li><strong>Integrazione meccanica</strong> tra parti stampate e componenti elettronici</li>
+                    </ul>
+                </div>
+                
+                <div class="design-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-ruler-combined"></i>
+                        </div>
+                        <h4>Precisione Meccanica</h4>
+                        <p>Tutti gli ingranaggi e i meccanismi sono progettati con tolleranze ottimali per la stampa 3D</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-weight-hanging"></i>
+                        </div>
+                        <h4>Struttura Leggera</h4>
+                        <p>Design ottimizzato per ridurre il peso mantenendo la rigidità</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h4>Assemblaggio semplice</h4>
+                        <p>Componenti progettati per un montaggio semplice senza bisogno di utensili speciali</p>
+                    </div>
+                </div>
+                
+                <div class="printing-specs">
+                    <h3>Specifiche di Stampa</h3>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Materiale:</span>
+                            <span class="spec-value">PLA</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Stampante:</span>
+                            <span class="spec-value">Bambulab A1</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Risoluzione:</span>
+                            <span class="spec-value">0.2mm layer height</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Riempimento:</span>
+                            <span class="spec-value">15%</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Tempo totale stampa:</span>
+                            <span class="spec-value">-</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Componenti totali:</span>
+                            <span class="spec-value">33 parti stampate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="design-gallery">
+                    <h3>Galleria</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <div class="gallery-placeholder">
+                                <img src="./img/gallery-item-1.jpg" onerror="this.outerHTML = '<i class=\'fas fa-image\'></i><br><span style=\'color: #da737e;\'>Immagine non disponibile</span>';" alt="Immagine non disponibile" />
+                                <p>Render 3D Assemblato</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-placeholder">
+                                <img src="./img/gallery-item-2.jpg" onerror="this.outerHTML = '<i class=\'fas fa-image\'></i><br><span style=\'color: #da737e;\'>Immagine non disponibile</span>';" alt="Immagine non disponibile" />
+                                <p>Componenti Singoli</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-placeholder">
+                                <img src="./img/gallery-item-3.jpg" onerror="this.outerHTML = '<i class=\'fas fa-image\'></i><br><span style=\'color: #da737e;\'>Immagine non disponibile</span>';" alt="Immagine non disponibile" />
+                                <p>Braccio Completo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Codice -->
+        <section id="codice" class="section">
+            <div class="section-header">
+                <i class="fas fa-code"></i>
+                <h2>Codice</h2>
+            </div>
+            
+            <p>Il sistema utilizza tre componenti software principali che comunicano tra loro:</p>
+            
+            <h3>1. Firmware Arduino (Gestione Hardware)</h3>
+            <div class="code">
+                <span class="code-filename">Braccio_robotico.ino</span>
+                <pre>
+                    <code>
+                        <span class="code-keyword">#include</span> <span class="code-string">&lt;Stepper.h&gt;</span>
+                        <span class="code-keyword">#include</span> <span class="code-string">&lt;Servo.h&gt;</span>
+
+                        <span class="code-comment">// Joystick</span>
+                        <span class="code-keyword">#define</span> VRX_PIN  <span class="code-number">A0</span> <span class="code-comment">// X pin</span>
+                        <span class="code-keyword">#define</span> VRY_PIN  <span class="code-number">A1</span> <span class="code-comment">// Y pin</span>
+                        <span class="code-keyword">#define</span> SW_PIN <span class="code-number">7</span>  <span class="code-comment">// Pulsante</span>
+
+                        <span class="code-comment">// Costanti e variabili</span>
+                        <span class="code-keyword">bool</span> baseCalibrated = <span class="code-keyword">false</span>;
+                        <span class="code-keyword">bool</span> spallaCalibrated = <span class="code-keyword">false</span>;
+                        <span class="code-keyword">bool</span> gomitoCalibrated = <span class="code-keyword">false</span>;
+                        <span class="code-keyword">int</span> baseCalibrationTimeout = <span class="code-number">0</span>; <span class="code-comment">// contatore dei passi dello stepper base</span>
+                        <span class="code-keyword">int</span> spallaCalibrationTimeout = <span class="code-number">0</span>; <span class="code-comment">// contatore dei passi dello stepper spalla</span>
+                        <span class="code-keyword">int</span> gomitoCalibrationTimeout = <span class="code-number">0</span>; <span class="code-comment">// contatore dei passi dello stepper gomito</span>
+
+                        <span style="margin-left: -100px; color: #999999;">... Altre 469 righe di codice</span>
+                    </code>
+                </pre><br>
+                <span class="code-footer">Puoi trovare l'intero codice <a href="https://discord.com/channels/1248014736960917504/1429227788598120568" target="_blank">sul server Discord</a> o su <a target="_blank">su GitHub</a>.</span>
+            </div>
+            
+            <h3>2. Bot Discord (Node.js)</h3>
+            <div class="code">
+                <span class="code-filename">index.js</span>
+                <pre>
+                    <code>
+                        <span class="code-keyword">require</span>(<span class="code-string">'dotenv'</span>).config();
+                        <span class="code-keyword">const</span> { Client, GatewayIntentBits } = <span class="code-keyword">require</span>(<span class="code-string">'discord.js'</span>);
+                        <span class="code-keyword">const</span> { SerialPort } = <span class="code-keyword">require</span>(<span class="code-string">'serialport'</span>);
+                        <span class="code-keyword">const</span> { ReadlineParser } = <span class="code-keyword">require</span>(<span class="code-string">'@serialport/parser-readline'</span>);
+
+                        <span class="code-comment">// ==================== CONFIGURAZIONE ====================</span>
+                        <span class="code-keyword">const</span> CONFIG = {
+                        &nbsp;&nbsp;&nbsp;&nbsp;discord: {
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;token: process.env.DISCORD_TOKEN,
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;channelId: <span class="code-string">'1423697180878700594'</span>,
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;botId: <span class="code-string">'1423307796321144893'</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;},
+                        &nbsp;&nbsp;&nbsp;&nbsp;serial: {
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;port: <span class="code-string">'COM3'</span>,
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;baudRate: <span class="code-number">9600</span>
+
+                        <span style="margin-left: -100px; color: #999999;">... Altre 350 righe di codice</span>
+                    </code>
+                </pre><br>
+                <span class="code-footer">Puoi trovare l'intero codice <a href="https://discord.com/channels/1248014736960917504/1429227788598120568" target="_blank">sul server Discord</a> o su <a target="_blank">su GitHub</a>.</span>
+            </div>
+            
+            <h3>3. Interfaccia Web</h3>
+            <div class="code">
+                <span class="code-filename">index.html</span>
+                <pre>
+                    <code>
+                        Codice momentaneamente non disponibile.
+                    </code>
+                </pre>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Footer -->
+     <a href="https://www.giulio-virtual-world.com" target="_blank">
+        <div class="homepage_btn">
+            <b>By:</b><i>www.giulio-virtual-world.com</i>
+        </div>
+    </a>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Braccio Robotico</h3>
+                <p>Ho creato un braccio robotico con la stampa 3D, Arduino e Node.js.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Link Rapidi</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#controllo"><i class="fas fa-gamepad"></i> Sistemi di Controllo</a></li>
+                    <li><a href="#componenti"><i class="fas fa-microchip"></i> Componenti</a></li>
+                    <li><a href="#codice"><i class="fas fa-code"></i> Codice</a></li>
+                    <li><a href="./control" target="_blank"><i class="fas fa-terminal"></i> Controllo web</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Tecnologie</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-microchip"></i> Arduino</a></li>
+                    <li><a href="#"><i class="fab fa-node-js"></i> Node.js</a></li>
+                    <li><a href="#"><i class="fab fa-discord"></i> Discord API</a></li>
+                    <li><a href="#"><i class="fas fa-code"></i> JavaScript</a></li>
+                    <li><a href="#"><i class="fas fa-cube"></i> Fusion 360</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="credits">
+            <p>Progetto sviluppato da <a href="https://www.giulio-virtual-world.com" target="_blank">www.giulio-virtual-world.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!--
+
+    Mancano:
+        - Circuito cablaggio
+        - Link GitHub
+        - Codice interfaccia web
+
+-->
