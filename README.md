@@ -50,7 +50,7 @@ Il codice è liberamente scaricabile e utilizzabile nei propri progetti. Non è 
 
 <br>
 
-# Codici sorgente e modelli 3D:
+# Codici sorgente e modelli 3D
 <ul>
   <li><a href="source/robotic-arm.ino" target="_blank">Arduino firmware</a></li>
   <li><a href="source/index.js" target="_blank">Discord Bot (node.js)</a></li>
