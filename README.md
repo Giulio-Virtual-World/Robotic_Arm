@@ -18,16 +18,15 @@ Questo progetto raccoglie tutto il necessario per costruire, programmare e contr
 
 # Requisiti
 <ul>
-  <li>Arduino compatibile (es. Arduino Uno o Mega).</li>
-  <li>x1 Breadboard</li>
-  <li>x1 Joystick Module</li>
-  <li>x1 Modulo MB102</li>
-  <li>x5 Driver ULN2003</li>
-  <li>x5 Stepper Motor 28BYJ-48</li>
-  <li>x3 Finecorsa a linguetta</li>
-  <li>x2 Servo MG90S</li>
-  <li>Jumper wires</li>
-  <li>Parti stampate in 3D.</li>
+  <li><a href="https://amzn.to/3XupfNZ" target="_blank">Arduino compatibile (es. Arduino Uno o Mega)</a></li>
+  <li><a href="https://amzn.to/3JZZGRP" target="_blank">x1 Breadboard</a></li>
+  <li><a href="https://amzn.to/480kFfp" target="_blank">x1 Joystick Module</a></li>
+  <li><a href="https://amzn.to/41p0DJT" target="_blank">x5 Driver ULN2003</a></li>
+  <li><a href="https://amzn.to/41p0DJT" target="_blank">x5 Stepper Motor 28BYJ-48</a></li>
+  <li><a href="https://amzn.to/469RmWM" target="_blank">x3 Finecorsa a linguetta</a></li>
+  <li><a href="https://amzn.to/3XvNDPj" target="_blank">x2 Servo MG90S</a></li>
+  <li><a href="https://amzn.to/40EHeDS" target="_blank">Jumper wires</a></li>
+  <li><a href="https://makerworld.com/it/models/2000062-robotic-arm-v1-0" target="_blank">Parti stampate in 3D</a></li>
   <li>Node.js installato.</li>
   <li>Server o PC attivo per il controllo remoto.</li>
 </ul>
