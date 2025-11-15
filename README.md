@@ -54,8 +54,7 @@ Il codice è liberamente scaricabile e utilizzabile nei propri progetti. Non è 
 <ul>
   <li><a href="source/robotic-arm.ino" target="_blank">Arduino firmware</a></li>
   <li><a href="source/index.js" target="_blank">Discord Bot (node.js)</a></li>
+  <li><a href="https://makerworld.com/it/models/2000062-robotic-arm-v1-0" target="_blank">Modello 3D</a></li>
 </ul>
 
 <br>
-
-⚠ Al momento il modello 3D non è disponibile
