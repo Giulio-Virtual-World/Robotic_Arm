@@ -3,6 +3,8 @@
   2025
   Author: Giulio Segre
   www.giulio-virtual-world.com
+
+  This is the code for a discord bot that interfaces with the robotic arm
   
 */
 
@@ -15,12 +17,12 @@ const { ReadlineParser } = require('@serialport/parser-readline');
 // ==================== CONFIGURAZIONE ====================
 const CONFIG = {
     discord: {
-        token: process.env.DISCORD_TOKEN,
+        token: process.env.DISCORD_TOKEN, // Your discord bot token in the .env file
         channelId: '1234567890123456789', // The ID of the channel where the bot should read/write messages
         botId: '1234567890123456789' // Your discord bot ID
     },
     serial: {
-        port: 'COM3',
+        port: 'COM3', // The port where Arduino is
         baudRate: 9600
     },
     motors: {
