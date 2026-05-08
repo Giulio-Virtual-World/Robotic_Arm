@@ -3,6 +3,8 @@
   2025
   Author: Giulio Segre
   www.giulio-virtual-world.com
+
+  This is the code for an Arduino Mega2560 that controls the robotic arm
   
 */
 
