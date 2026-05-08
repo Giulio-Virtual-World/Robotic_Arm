@@ -25,6 +25,7 @@ Questo progetto raccoglie tutto il necessario per costruire, programmare e contr
   <li><a href="https://amzn.to/41p0DJT" target="_blank">x5 Stepper Motor 28BYJ-48</a></li>
   <li><a href="https://amzn.to/469RmWM" target="_blank">x3 Finecorsa a linguetta</a></li>
   <li><a href="https://amzn.to/3XvNDPj" target="_blank">x2 Servo MG90S</a></li>
+  <li><a href="https://amzn.to/3QX2XEP" target="_blank">10KΩ Resistor</a></li>
   <li><a href="https://amzn.to/40EHeDS" target="_blank">Jumper wires</a></li>
   <li><a href="https://makerworld.com/it/models/2000062-robotic-arm-v1-0" target="_blank">Parti stampate in 3D</a></li>
   <li>Node.js installato.</li>
