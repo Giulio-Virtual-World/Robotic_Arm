@@ -1,4 +1,7 @@
-<hr><p style="color:#f00"><b>Attenzione:</b> Le risorse collegate al sito www.giulio-virtual-world.com non sono momentaneamente disponibili</p><hr>
+<hr><p style="color:#f00"><b>Attenzione:</b> Le risorse collegate al sito www.giulio-virtual-world.com non sono momentaneamente disponibili</p>
+
+<i>Scusate, sto trasferendo il dominio... torneranno entro 48h</i>
+<hr>
 <br><br>
 
 # Braccio Robotico Stampato in 3D e Controllato Multi-Piattaforma
