@@ -1,14 +1,8 @@
-<hr><p style="color:#f00"><b>Attenzione:</b> Le risorse collegate al sito www.giulio-virtual-world.com non sono momentaneamente disponibili</p>
-
-<i>Scusate, sto trasferendo il dominio... torneranno entro 48h</i>
-<hr>
-<br><br>
-
 # Braccio Robotico Stampato in 3D e Controllato Multi-Piattaforma
 Questo progetto raccoglie tutto il necessario per costruire, programmare e controllare a distanza e via joystick un braccio robotico interamente stampato in 3D. È stato sviluppato da zero, combinando modellazione 3D, Arduino, Node.js, un'interfaccia web e un bot Discord.<br>
 <a href="https://www.giulio-virtual-world.com/projects/robotic-arm/" target="_blank">➥ Visualizza il progetto completo</a>
 
-<img src="https://www.giulio-virtual-world.com/projects/robotic-arm/img/1.jpg" style="border-radius: 5px;">
+<img src="https://www.giulio-virtual-world.com/projects/projects/robotic-arm/img/1.jpg" style="border-radius: 5px;">
 <br>
 
 # Funzionalità Principali
