@@ -19,18 +19,18 @@ Questo progetto include tutto il necessario per costruire, programmare e control
 
 # Requisiti
 <ul>
-  <li><a href="https://amzn.to/3XupfNZ" target="_blank"><img src="https://img.shields.io/badge/🔗-Arduino_compatibile-007ec6"></a> (es. Arduino Uno o Mega)</li>
-  <li><a href="https://amzn.to/3JZZGRP" target="_blank"><img src="https://img.shields.io/badge/🔗-x1_|_Breadboard-007ec6"></a></li>
-  <li><a href="https://amzn.to/480kFfp" target="_blank"><img src="https://img.shields.io/badge/🔗-x1_|_Modulo_Joystick-007ec6"></a></li>
-  <li><a href="https://amzn.to/41p0DJT" target="_blank"><img src="https://img.shields.io/badge/🔗-x5_|_Driver_ULN2003-007ec6"></a></li>
-  <li><a href="https://amzn.to/41p0DJT" target="_blank"><img src="https://img.shields.io/badge/🔗-x5_|_Stepper_Motor_28BYJ‒48-007ec6"></a></li>
-  <li><a href="https://amzn.to/469RmWM" target="_blank"><img src="https://img.shields.io/badge/🔗-x3_|_Finecorsa_a_linguetta-007ec6"></a></li>
-  <li><a href="https://amzn.to/3XvNDPj" target="_blank"><img src="https://img.shields.io/badge/🔗-x2_|_Servo_MG90S-007ec6"></a></li>
-  <li><a href="https://amzn.to/3QX2XEP" target="_blank"><img src="https://img.shields.io/badge/🔗-x3_|_10KΩ_Resistor-007ec6"></a> (pull-down)</li>
-  <li><a href="https://amzn.to/40EHeDS" target="_blank"><img src="https://img.shields.io/badge/🔗-Cavetti_Jumper-007ec6"></a></li>
-  <li><a href="https://makerworld.com/it/models/2000062-robotic-arm-v1-0" target="_blank"><img src="https://img.shields.io/badge/🔗-Parti_stampate_in_3D-00b000"></a></li>
-  <li><a href="https://github.com/Giulio-Virtual-World/Robotic_Arm/#requisiti" target="_blank"><img src="https://img.shields.io/badge/Node.js_installato-8A2BE2"></li>
-  <li><a href="https://github.com/Giulio-Virtual-World/Robotic_Arm/#requisiti" target="_blank"><img src="https://img.shields.io/badge/Server_o_PC_attivo_per_il_controllo_remoto-8A2BE2"></li>
+  <li><a href="https://amzn.to/3XupfNZ" target="_blank"><img alt="Arduino compatibile" src="https://img.shields.io/badge/🔗-Arduino_compatibile-007ec6"></a> (es. Arduino Uno o Mega)</li>
+  <li><a href="https://amzn.to/3JZZGRP" target="_blank"><img alt="x1 Breadboard" src="https://img.shields.io/badge/🔗-x1_|_Breadboard-007ec6"></a></li>
+  <li><a href="https://amzn.to/480kFfp" target="_blank"><img alt="x1 Modulo Joystick" src="https://img.shields.io/badge/🔗-x1_|_Modulo_Joystick-007ec6"></a></li>
+  <li><a href="https://amzn.to/41p0DJT" target="_blank"><img alt="x5 Driver ULN2003" src="https://img.shields.io/badge/🔗-x5_|_Driver_ULN2003-007ec6"></a></li>
+  <li><a href="https://amzn.to/41p0DJT" target="_blank"><img alt="x5 Stepper Motor 28BYJ-48" src="https://img.shields.io/badge/🔗-x5_|_Stepper_Motor_28BYJ‒48-007ec6"></a></li>
+  <li><a href="https://amzn.to/469RmWM" target="_blank"><img alt="x3 Finecorsa a linguetta" src="https://img.shields.io/badge/🔗-x3_|_Finecorsa_a_linguetta-007ec6"></a></li>
+  <li><a href="https://amzn.to/3XvNDPj" target="_blank"><img alt="x2 Servo MG90S" src="https://img.shields.io/badge/🔗-x2_|_Servo_MG90S-007ec6"></a></li>
+  <li><a href="https://amzn.to/3QX2XEP" target="_blank"><img alt="x3 Resistenze 10KΩ" src="https://img.shields.io/badge/🔗-x3_|_10KΩ_Resistor-007ec6"></a> (pull-down)</li>
+  <li><a href="https://amzn.to/40EHeDS" target="_blank"><img alt="Cavetti jumper" src="https://img.shields.io/badge/🔗-Cavetti_Jumper-007ec6"></a></li>
+  <li><a href="https://makerworld.com/it/models/2000062-robotic-arm-v1-0" target="_blank"><img alt="Parti stampate in 3D" src="https://img.shields.io/badge/🔗-Parti_stampate_in_3D-00b000"></a></li>
+  <li><a href="https://github.com/Giulio-Virtual-World/Robotic_Arm/#requisiti" target="_blank"><img alt="Node.js installato" src="https://img.shields.io/badge/Node.js_installato-8A2BE2"></a></li>
+  <li><a href="https://github.com/Giulio-Virtual-World/Robotic_Arm/#requisiti" target="_blank"><img alt="Server o PC attivo per controllo remoto" src="https://img.shields.io/badge/Server_o_PC_attivo_per_il_controllo_remoto-8A2BE2"></a></li>
 </ul>
 
 <br>
