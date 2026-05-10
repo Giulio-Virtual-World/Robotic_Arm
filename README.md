@@ -1,11 +1,11 @@
 # Braccio Robotico Stampato in 3D e Controllato Multi-Piattaforma
-Questo progetto raccoglie tutto il necessario per costruire, programmare e controllare a distanza e via joystick un braccio robotico interamente stampato in 3D. È stato sviluppato da zero, combinando modellazione 3D, Arduino, Node.js, un'interfaccia web e un bot Discord.<br>
+Questo progetto raccoglie tutto il necessario per costruire, programmare e controllare a distanza (attraverso un bot di Discord e un'interfaccia web) e via joystick un braccio robotico interamente stampato in 3D. È stato sviluppato da zero, combinando modellazione 3D, Arduino, Node.js, un'interfaccia web un bot e Webhook Discord.<br>
 <a href="https://www.giulio-virtual-world.com/projects/robotic-arm/" target="_blank">➥ Visualizza il progetto completo</a>
 
 <img src="https://www.giulio-virtual-world.com/projects/projects/robotic-arm/img/1.jpg" style="border-radius: 5px;">
 <br>
 
-# Funzionalità Principali
+# Punti Principali
 <ul>
   <li>Braccio interamente realizzato in stampa 3D.</li>
   <li>Firmware Arduino dedicato al controllo del braccio.</li>
@@ -40,7 +40,7 @@ Questo progetto raccoglie tutto il necessario per costruire, programmare e contr
   <li><b>Assemblare il braccio:</b> utilizzare i file stampati e i motori indicati nel progetto.</li>
   <li><b>Caricare il firmware su Arduino:</b> aprire <a href="source/robotic-arm.ino" target="_blank">robotic-arm.ino</a>, configurare la porta e caricare.</li>
   <li><b>Installare le dipendenze Node.js:</b> eseguire `npm install` nella cartella del progetto.</li>
-  <li><b>Configurare il Bot Discord:</b> inserire il token e gli ID richiesti nel file di configurazione <a href="source/index.js" target="_blank">index.js</a> e avviare il bot.</li>
+  <li><b>Configurare il Bot Discord:</b> inserire il token e gli ID richiesti nel file di configurazione <a href="source/index.js" target="_blank">index.js</a> e avviare il bot in locale.</li>
 </ol>
 
 <br>
