@@ -29,8 +29,8 @@ Questo progetto include tutto il necessario per costruire, programmare e control
   <li><a href="https://amzn.to/3QX2XEP" target="_blank"><img alt="x3 Resistenze 10KΩ" src="https://img.shields.io/badge/🔗-x3_|_10KΩ_Resistor-007ec6"></a> (pull-down)</li>
   <li><a href="https://amzn.to/40EHeDS" target="_blank"><img alt="Cavetti jumper" src="https://img.shields.io/badge/🔗-Cavetti_Jumper-007ec6"></a></li>
   <li><a href="https://makerworld.com/it/models/2000062-robotic-arm-v1-0" target="_blank"><img alt="Parti stampate in 3D" src="https://img.shields.io/badge/🔗-Parti_stampate_in_3D-00b000"></a></li>
-  <li><a href="https://github.com/Giulio-Virtual-World/Robotic_Arm/#requisiti" target="_blank"><img alt="Node.js installato" src="https://img.shields.io/badge/Node.js_installato-8A2BE2"></a></li>
-  <li><a href="https://github.com/Giulio-Virtual-World/Robotic_Arm/#requisiti" target="_blank"><img alt="Server o PC attivo per controllo remoto" src="https://img.shields.io/badge/Server_o_PC_attivo_per_il_controllo_remoto-8A2BE2"></a></li>
+  <li><a href="https://github.com/Giulio-Virtual-World/Robotic_Arm#requisiti" target="_blank"><img alt="Node.js installato" src="https://img.shields.io/badge/Node.js_installato-8A2BE2"></a></li>
+  <li><a href="https://github.com/Giulio-Virtual-World/Robotic_Arm#requisiti" target="_blank"><img alt="Server o PC attivo per controllo remoto" src="https://img.shields.io/badge/Server_o_PC_attivo_per_il_controllo_remoto-8A2BE2"></a></li>
 </ul>
 
 <br>
