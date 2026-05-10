@@ -40,6 +40,7 @@ Questo progetto include tutto il necessario per costruire, programmare e control
   <li><b>Stampare in 3D le parti:</b> tutte le parti sono progettate per essere semplici da assemblare.</li>
   <li><b>Assemblare il braccio:</b> utilizzare i file stampati e i motori indicati nel progetto.</li>
   <li><b>Caricare il firmware su Arduino:</b> aprire <a href="source/robotic-arm.ino" target="_blank">robotic-arm.ino</a>, configurare la porta e caricare.</li>
+  <li><b>Scaricare il file <a href="source/index.js" target="_blank">index.js</a></b> (bot Discord)</li>
   <li><b>Installare le dipendenze Node.js:</b> eseguire `npm install discord.js dotenv serialport` nella cartella del progetto.</li>
   <li><b>Configurare il Bot Discord:</b> inserire il token e gli ID richiesti nel file di configurazione <a href="source/index.js" target="_blank">index.js</a> e avviare il bot in locale.</li>
 </ol>
