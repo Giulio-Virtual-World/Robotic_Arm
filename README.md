@@ -1,11 +1,11 @@
 # Braccio Robotico Stampato in 3D e Controllato Multi-Piattaforma
-Questo progetto raccoglie tutto il necessario per costruire, programmare e controllare a distanza (attraverso un bot di Discord e un'interfaccia web) e via joystick un braccio robotico interamente stampato in 3D. È stato sviluppato da zero, combinando modellazione 3D, Arduino, Node.js, un'interfaccia web un bot e Webhook Discord.<br>
+Questo progetto include tutto il necessario per costruire, programmare e controllare un braccio robotico interamente stampato in 3D, sia tramite joystick sia da remoto attraverso un bot Discord e un’interfaccia web. È stato sviluppato completamente da zero, integrando modellazione 3D, Arduino, Node.js, interfaccia web (HTML/CSS/JS/PHP), bot Discord e Webhook Discord.<br>
 <a href="https://www.giulio-virtual-world.com/projects/robotic-arm/" target="_blank">➥ Visualizza il progetto completo</a>
 
 <img src="https://www.giulio-virtual-world.com/projects/projects/robotic-arm/img/1.jpg" style="border-radius: 5px;">
 <br>
 
-# Punti Principali
+# Aspetti Principali
 <ul>
   <li>Braccio interamente realizzato in stampa 3D.</li>
   <li>Firmware Arduino dedicato al controllo del braccio.</li>
@@ -13,23 +13,24 @@ Questo progetto raccoglie tutto il necessario per costruire, programmare e contr
   <li>Bot Discord per il controllo remoto tramite messaggi.</li>
   <li>Possibilità di integrazione con interfacce web.</li>
 </ul>
+<img src="https://www.giulio-virtual-world.com/projects/projects/robotic-arm/img/Diagramma_funzionamento.png" style="border-radius: 5px; width: 60%;">
 
 <br>
 
 # Requisiti
 <ul>
-  <li><a href="https://amzn.to/3XupfNZ" target="_blank">Arduino compatibile (es. Arduino Uno o Mega)</a></li>
-  <li><a href="https://amzn.to/3JZZGRP" target="_blank">x1 Breadboard</a></li>
-  <li><a href="https://amzn.to/480kFfp" target="_blank">x1 Modulo Joystick</a></li>
-  <li><a href="https://amzn.to/41p0DJT" target="_blank">x5 Driver ULN2003</a></li>
-  <li><a href="https://amzn.to/41p0DJT" target="_blank">x5 Stepper Motor 28BYJ-48</a></li>
-  <li><a href="https://amzn.to/469RmWM" target="_blank">x3 Finecorsa a linguetta</a></li>
-  <li><a href="https://amzn.to/3XvNDPj" target="_blank">x2 Servo MG90S</a></li>
-  <li><a href="https://amzn.to/3QX2XEP" target="_blank">10KΩ Resistor</a> (pull-down)</li>
-  <li><a href="https://amzn.to/40EHeDS" target="_blank">Cavetti Jumper</a></li>
-  <li><a href="https://makerworld.com/it/models/2000062-robotic-arm-v1-0" target="_blank">Parti stampate in 3D</a></li>
-  <li>Node.js installato.</li>
-  <li>Server o PC attivo per il controllo remoto.</li>
+  <li><a href="https://amzn.to/3XupfNZ" target="_blank"><img src="https://img.shields.io/badge/🔗-Arduino_compatibile-007ec6"></a> (es. Arduino Uno o Mega)</li>
+  <li><a href="https://amzn.to/3JZZGRP" target="_blank"><img src="https://img.shields.io/badge/🔗-x1_|_Breadboard-007ec6"></a></li>
+  <li><a href="https://amzn.to/480kFfp" target="_blank"><img src="https://img.shields.io/badge/🔗-x1_|_Modulo_Joystick-007ec6"></a></li>
+  <li><a href="https://amzn.to/41p0DJT" target="_blank"><img src="https://img.shields.io/badge/🔗-x5_|_Driver_ULN2003-007ec6"></a></li>
+  <li><a href="https://amzn.to/41p0DJT" target="_blank"><img src="https://img.shields.io/badge/🔗-x5_|_Stepper_Motor_28BYJ‒48-007ec6"></a></li>
+  <li><a href="https://amzn.to/469RmWM" target="_blank"><img src="https://img.shields.io/badge/🔗-x3_|_Finecorsa_a_linguetta-007ec6"></a></li>
+  <li><a href="https://amzn.to/3XvNDPj" target="_blank"><img src="https://img.shields.io/badge/🔗-x2_|_Servo_MG90S-007ec6"></a></li>
+  <li><a href="https://amzn.to/3QX2XEP" target="_blank"><img src="https://img.shields.io/badge/🔗-x3_|_10KΩ_Resistor-007ec6"></a> (pull-down)</li>
+  <li><a href="https://amzn.to/40EHeDS" target="_blank"><img src="https://img.shields.io/badge/🔗-Cavetti_Jumper-007ec6"></a></li>
+  <li><a href="https://makerworld.com/it/models/2000062-robotic-arm-v1-0" target="_blank"><img src="https://img.shields.io/badge/🔗-Parti_stampate_in_3D-00b000"></a></li>
+  <li><a href="https://github.com/Giulio-Virtual-World/Robotic_Arm/#requisiti" target="_blank"><img src="https://img.shields.io/badge/Node.js_installato-8A2BE2"></li>
+  <li><a href="https://github.com/Giulio-Virtual-World/Robotic_Arm/#requisiti" target="_blank"><img src="https://img.shields.io/badge/Server_o_PC_attivo_per_il_controllo_remoto-8A2BE2"></li>
 </ul>
 
 <br>
