@@ -1,6 +1,6 @@
 # Braccio Robotico Stampato in 3D e Controllato Multi-Piattaforma
 Questo progetto include tutto il necessario per costruire, programmare e controllare un braccio robotico interamente stampato in 3D, sia tramite joystick sia da remoto attraverso un bot Discord e un’interfaccia web. È stato sviluppato completamente da zero, integrando modellazione 3D, Arduino, Node.js, interfaccia web (HTML/CSS/JS/PHP), bot Discord e Webhook Discord.<br>
-<a href="https://www.giulio-virtual-world.com/projects/robotic-arm/" target="_blank">➥ Visualizza il progetto completo</a>
+<a href="https://www.giulio-virtual-world.com/projects/robotic-arm/" target="_blank"><img alt="➥ Visualizza il progetto completo" src="https://www.giulio-virtual-world.com/projects/projects/robotic-arm/img/github/see-full-project.png" style="width: 400px;"></a>
 
 <img src="https://www.giulio-virtual-world.com/projects/projects/robotic-arm/img/1.jpg" style="border-radius: 5px;">
 <br>
